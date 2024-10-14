@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Column Flexbox Layout</title>
+    <style>
+        /* General styling for body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Flex container */
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Column styling */
+        .column {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+
+        /* Optional: make the columns responsive */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <!-- First column -->
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>This is the content of the first column. You can add text, images, or other elements here.</p>
+        </div>
+
+        <!-- Second column -->
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>This is the content of the second column. You can also add various elements here.</p>
+        </div>
+    </div>
+</body>
+</html>
